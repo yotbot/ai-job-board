@@ -16,5 +16,7 @@ export function useIsDarkMode() {
     return () => {
       controller.abort();
     };
-  });
+  }, []);
+
+  return isDarkMode;
 }
